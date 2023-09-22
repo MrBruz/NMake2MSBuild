@@ -1,0 +1,3 @@
+# Ignore Dotnet build files.
+obj/
+bin/
