@@ -1,0 +1,50 @@
+<!--
+***********************************************************************************************
+to Conversion.Default.Props
+
+WARNING:  DO NOT MODIFY this file unless you are knowledgeable about MSBuild as well as the
+          conversion tool and have created a backup copy.  Incorrect changes to this file will 
+          make it impossible to load or build your projects from the command-line or the IDE.
+
+This file defines the steps/targets required to build driver projects.
+
+Copyright (C) Microsoft Corporation. All rights reserved.
+***********************************************************************************************
+-->
+
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+
+  <!-- Default value for predefined build properties -->
+  <!-- These are ONLY to be used as seed values during conversion and will NOT be used during build -->
+  <PropertyGroup>
+
+    <MSC_WARNING_LEVEL>/W3</MSC_WARNING_LEVEL>
+    <FREEBUILD>0</FREEBUILD>
+    <WIN64>1</WIN64>
+    <AMD64>1</AMD64>
+    <_BUILDARCH>x86</_BUILDARCH>
+    <NTDEBUG>ntsdnodbg</NTDEBUG>
+    <DDKBUILDENV>chk</DDKBUILDENV>
+    
+    <DDK_TARGET_OS>WinLH</DDK_TARGET_OS>
+    
+    <SUBSYSTEM_600>6</SUBSYSTEM_600>
+    <_NT_TARGET_VERSION_WS03>0x502</_NT_TARGET_VERSION_WS03>
+    <SUBSYSTEM_501>5.02</SUBSYSTEM_501>
+    <_NT_TOOLS_VERSION>0x700</_NT_TOOLS_VERSION>
+    <_NT_TARGET_VERSION>0x601</_NT_TARGET_VERSION>
+    <_NT_TARGET_VERSION_WINXP>0x501</_NT_TARGET_VERSION_WINXP> 
+    <_NT_TARGET_VERSION_WIN8>0x602</_NT_TARGET_VERSION_WIN8>
+    <_NT_TARGET_VERSION_WIN7>0x601</_NT_TARGET_VERSION_WIN7>
+    <_NT_TARGET_VERSION_VISTA>0x600</_NT_TARGET_VERSION_VISTA>
+    <_NT_TARGET_VERSION_LONGHORN>0x600</_NT_TARGET_VERSION_LONGHORN>
+    <_NT_TARGET_VERSION_NT4>0x400</_NT_TARGET_VERSION_NT4>
+    <_NT_TARGET_VERSION_LATEST>$(_NT_TARGET_VERSION_WIN8)</_NT_TARGET_VERSION_LATEST>
+    
+    <LATEST_NTDDI_VERSION>0x06020000</LATEST_NTDDI_VERSION>
+    <LATEST_WIN32_WINNT_VERSION>0x0602</LATEST_WIN32_WINNT_VERSION>
+
+  </PropertyGroup>
+</Project>
+
+
